@@ -46,7 +46,7 @@ try {
   console.log(c.red(`${databasePath} file wasn't found`))
   console.log(
     c.blue(`Please download database from`),
-    c.green(`https://raw.githubusercontent.com/LuisReinoso/ng-error-fixer/master/errors-db.json`)
+    c.green(`https://raw.githubusercontent.com/LuisReinoso/ng-error-fixer/master/db/errors-db.json`)
   )
   console.log(c.blue(`WIP: Download database automatically`))
   process.exit(1)
