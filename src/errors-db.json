@@ -1,0 +1,14 @@
+{
+  "NG8001": {
+    "code": "NG8001",
+    "solution": {
+      "packageName": "unknown-html-schematics",
+      "repo": "https://github.com/LuisReinoso/unknown-html-schematics",
+      "schematics": "unknown-html-schematics:fix",
+      "args": {
+        "path": "",
+        "selector": ""
+      }
+    }
+  }
+}
