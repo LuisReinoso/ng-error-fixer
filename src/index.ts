@@ -114,6 +114,13 @@ process.stdin.on('readable', async function () {
           c.green(prefix),
           c.blue('prefix')
         )
+
+        console.log('')
+
+        console.log(
+          c.blue('Stackoverflow'),
+          c.green(`https://stackoverflow.com/search?q=%5Bangular%5D+${encodeURI(errorInfo.message)}`, ),
+        )
       }
     }
   }
