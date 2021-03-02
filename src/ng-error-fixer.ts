@@ -37,16 +37,21 @@ export function parseLogs(archivo: any): { code: string; [key: string]: string }
 }
 
 function parseUnknownHTML(archivo: any, codeFound: any) {
+
   const pathRegex = /src.*html/
   const pathFound = archivo.match(pathRegex)
 
   const selectorRegex = /'.*'/
   const selectorFound = archivo.match(selectorRegex)
 
+  const messageRegex = /NG\d\d\d\d:\s(.*):$/m
+  const messageFound = archivo.match(messageRegex)
+
   return {
     code: codeFound[0],
     path: pathFound[0],
     selector: selectorFound[0].replace(/'/g, ''),
+    message: messageFound[1]
   }
 }
 
